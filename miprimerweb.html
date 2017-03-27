@@ -1,51 +1,85 @@
+<!DOCTYPE html>
 <html>
-	<head>
+	<head>  
 		<title>Panaderia Las Delicias</title>
-		<!--mi comentario-->
+		
+		<link href="stylesheet.css" rel="stylesheet"  type="text/css">
+	
+	</head>	
 
-		<link href="main.css" rel="stylesheet" type="text/css">
+	<body>
+	    <h1>Panaderia <br>  Exquiciteces y Delicias</h1>
 
-		<body background="imagenes/panaderiafull.jpg">
+        <div id="contenedor"> 
 
-	</head>
-	 <body>
-	    <h1 align="center">Exquiciteces y Delicias</h1>
-		<div align="left">
-		<div class="item">
-			<h2>Nuestras especialidades</h2>
-			<p>Tenemos unos ricos pancitos de queso super sabrosos y en sus tres sabores
-			</p>
-			</br><a href="chipaqueso.html" target="_blank"/><img class="chipaqueso" src="imagenes/Chipa.jpg" style="width:300px;height: 300;" alt="Chipa" title="Chipa"/></a>
-		</div>
-		<div class="item">
-			<h2>Bombonería y Chocolateria</h2>
-			
-			<p>Una variedad de bombones hechos con la mayor excelencia y calidad especialmente a nuestros clientes.
-			</p>
-			</br><a href="bombones.html" target="_blank"/><img class="bomboneses" src="imagenes/bombones.jpg" style="width:300px;height: 300;" alt="bombones" title="bombones"/></a>
-		</div>
-		<div class="item">
-			<h2>Tortas</h2>
-			<p> Ideal para cumpleaños, eventos, sorpresas o simplemente darse un gusto.
-			</p>
-			</br><a href="torta.html" target="_blank"/><img class="torta" src="imagenes/torta.jpg" style="width:300px;height: 300;" alt="Torta" title="torta"/></a>
-		</div>
+            <div id="menu">
+		      <ul>
+		        <li type="square"><a href="Telefonos.html"> Telefonos</a> </li><br>
+		        <li type="square"><a href="Direccion.html"> Direccion</a></li><br>
+		        <li type="square"><a href="Correo.html"> Correo</a> </li> <br>
+		        <li type="square"><a href="Contacto.html"> Contacto</a> </li> <br>
+		      </ul>
+            </div>
+  
+		    <div class="contenido">
+
+		       <div class="modulo">
+			   <h2>Nuestras especialidades</h2>
+			   <p>Tenemos unos ricos pancitos de queso super sabrosos y en sus tres sabores </p>
+			   </br><a href="chipaqueso.html" target="_blank"/><img class="chipaqueso" src="imagenes/Chipa.jpg" style="width:300px;height: 300;" alt="Chipa" title="Chipa"/></a>
+		       </div>
+		   
+		       <div class="modulo">
+			   <h2>Bomboneria y Chocolateria</h2>
+			   <p>Una variedad de bombones hechos con la mayor excelencia y calidad especialmente a nuestros clientes.
+			   </p>
+			   </br><a href="bombones.html" target="_blank"/><img class="bomboneses" src="imagenes/bombones.jpg" style="width:300px;height: 300;" alt="bombones" title="bombones"/></a>
+		       </div>
+
+
+            </div>
+         
+		    <div class="contenido2">
+
+		        <div class="modulo">
+			     <h2>Tortas</h2>
+			    <p> Ideal para cumpleaños, eventos, sorpresas o simplemente darse un gusto.</p>
+			    </br><a href="torta.html" target="_blank"/><img class="torta" src="imagenes/torta.jpg" style="width:300px;  height: 300;" alt="Torta" title="torta"/></a>
+		        </div>
+
+		        <div class="modulo">
+			    <h2>Desayunos</h2>
+			    <p> Preparamos tu desayuno personalizado.</p>
+			    </br><a href="desayuno.html" target="_blank"/><img class="desayuno" src="imagenes/desayuno.jpg" style="width:300px;height: 300;" alt="desayuno" title="desayuno"/></a>
+		        </div>
+
+		    </div>
 
 		</div>
-		<div class="item">
-			<h2>Desayunos</h2>
-			<p> Preparamos tu desayuno personalizado.
-			</p>
-			</br><a href="desayuno.html" target="_blank"/><img class="desayuno" src="imagenes/desayuno.jpg" style="width:300px;height: 300;" alt="desayuno" title="desayuno"/></a>
-		</div>
+  
+        <div class="formulario">     
+          <form-action="method=">
+          <input type="text" name="nombre">
+          <input type="hidden" name="nombre"> <br>
+          <input type="password" name="contraseña" maxlength="16"> <br>
+          <input type="radio" name="genero" value="F">
+          <input type="radio" name="genero" value="M"> <br>
+          <input type="checkbox" id="cbox1" value="caba"> caba
+          <input type="checkbox" id="cbox1" value="bsas"> bsas
+          <input name="imagen" type="file" /> <br>
 
-		<div id="Contacto">
-		 <ul>
-		<li type="square"><a href="Telefonos.html"> Telefonos</a> </li><br>
-		<li type="square"><a href="Direccion.html"> Direccion</a></li><br>
-		<li type="square"><a href="Correo.html"> Correo</a> </li>  <br>
-		</ul>
+          <label for="name">nombre</label>
+          <input type="text" id="name" name="name" />
+          <label>nombre<input type="text" id="name" name="name"/></label> <br>
+          <textarea rows="4" cols="50">Capacitacion ADA future codes ;) </textarea>  <br>
+          <select name="select" multiple="true">
+          <option value="1">TV</option>
+          <option value="2" selected>Cine</option>
+          <option value="3">Teatro</option>	
+          </select>
+          </form> 
+        </div>     
 
-		</div>
 	</body>
+
 </html>
